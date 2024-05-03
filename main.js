@@ -23,12 +23,8 @@ function addImages(data) {
         addImage2Body(div_item);
     }
 }
-let data = [
-    {id: 0, price: 0, description: "", name: "[Name]"},
-    {id: 1, price: 0, description: "", name: "[Name]"},
-    {id: 2, price: 0, description: "", name: "[Name]"},
-    {id: 3, price: 0, description: "", name: "[Name]"},
-    {id: 4, price: 0, description: "", name: "[Name]"},
-    {id: 5, price: 0, description: "", name: "[Name]"}
-];
+let data = [];
+for (let i = 0; i < 6; i++) {
+    data.push({id: i, price: 0, description: "", name: "[Name]"})
+}
 addImages(data);
